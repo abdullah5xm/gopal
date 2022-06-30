@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css" media="all">
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1 id="gopal"></h1>
+
+    <script type="text/javascript" charset="utf-8">
+        function gettingJob(a) {
+
+            let pattern = /p/ig;
+            let result = pattern.test(a);
+            if (result) {
+
+                document.getElementById('gopal').innerHTML = "হুমম! তোমার জন্য একটা টিউশন আছে আমার কাছে";
+            } else {
+                document.getElementById('gopal').innerHTML = "যা ভাগ এখান থেকে";
+            }
+
+        }
+
+
+        console.log(gettingJob(prompt("নাম কিয়া তোর?")));
+    </script>
+</body>
+</html>
